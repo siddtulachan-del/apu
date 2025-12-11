@@ -1,0 +1,12 @@
+Linguistics Lecture Notes:
+
+This lecture covers:
+- Phonetics: The study of speech sounds.
+- Syntax: The rules governing sentence structure.
+- Semantics: The study of meaning in language.
+- Language Acquisition: How humans acquire and develop language.
+
+Key takeaways:
+- Language is a complex system with various interacting components.
+- Understanding these components helps us analyze and interpret human communication.
+- Further research areas include computational linguistics and sociolinguistics.
