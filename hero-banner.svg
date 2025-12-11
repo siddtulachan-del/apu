@@ -1,0 +1,42 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Academic Excellence Hero Banner</title>
+  <desc id="desc">Students studying with books and laptops in an abstract educational scene</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#6b8bff"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e5e7ff" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="200" cy="150" r="140" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="1400" cy="200" r="180" fill="rgba(255,255,255,0.06)"/>
+  <rect x="200" y="260" width="520" height="320" rx="28" fill="url(#card)" stroke="#c7d2fe" stroke-width="4"/>
+  <rect x="240" y="310" width="440" height="40" rx="12" fill="#4f46e5" opacity="0.9"/>
+  <rect x="240" y="370" width="280" height="20" rx="8" fill="#9aa5ff" opacity="0.9"/>
+  <rect x="240" y="410" width="360" height="18" rx="8" fill="#c7d2fe" opacity="0.9"/>
+  <rect x="240" y="450" width="300" height="18" rx="8" fill="#c7d2fe" opacity="0.8"/>
+  <rect x="240" y="520" width="160" height="46" rx="14" fill="#4f46e5" opacity="0.9"/>
+  <rect x="420" y="520" width="160" height="46" rx="14" fill="#111827" opacity="0.9"/>
+  <rect x="840" y="210" width="520" height="420" rx="40" fill="rgba(17,24,39,0.3)" stroke="rgba(255,255,255,0.18)" stroke-width="4"/>
+  <rect x="880" y="250" width="440" height="280" rx="24" fill="#0b1221" stroke="#1f2937" stroke-width="6"/>
+  <rect x="900" y="270" width="400" height="240" rx="18" fill="#111827"/>
+  <g transform="translate(930 300)" fill="#4f46e5" opacity="0.8">
+    <rect x="0" y="0" width="36" height="36" rx="10"/>
+    <rect x="70" y="0" width="160" height="14" rx="7" fill="#e5e7eb" opacity="0.7"/>
+    <rect x="70" y="24" width="200" height="10" rx="6" fill="#e5e7eb" opacity="0.6"/>
+    <rect x="0" y="60" width="360" height="12" rx="6" fill="#93c5fd" opacity="0.8"/>
+    <rect x="0" y="84" width="320" height="12" rx="6" fill="#93c5fd" opacity="0.6"/>
+    <rect x="0" y="108" width="280" height="12" rx="6" fill="#93c5fd" opacity="0.5"/>
+    <rect x="0" y="150" width="140" height="16" rx="8" fill="#22d3ee" opacity="0.9"/>
+    <rect x="160" y="150" width="120" height="16" rx="8" fill="#c084fc" opacity="0.8"/>
+  </g>
+  <circle cx="780" cy="650" r="26" fill="#22d3ee" opacity="0.8"/>
+  <circle cx="1180" cy="650" r="26" fill="#c084fc" opacity="0.8"/>
+  <text x="230" y="200" fill="#ffffff" font-family="Inter, 'Segoe UI', Arial" font-size="56" font-weight="800">Academic Excellence Society</text>
+  <text x="230" y="250" fill="#e5e7eb" font-family="Inter, 'Segoe UI', Arial" font-size="26" font-weight="500">Collaborative learning · Modern skills · Professional growth</text>
+</svg>
+
