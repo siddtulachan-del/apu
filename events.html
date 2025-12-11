@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upcoming events, workshops, and seminars organized by APU Academic Excellence Society">
+    <title>Events - APU Academic Excellence Society</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>APU Academic Excellence Society</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="forums.html">Forums</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Upcoming Events</h1>
+                <p>Join us for workshops, seminars, and networking events</p>
+            </div>
+        </section>
+
+        <section class="events-content">
+            <div class="container">
+                <div class="events-filter">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="workshop">Workshops</button>
+                    <button class="filter-btn" data-filter="seminar">Seminars</button>
+                    <button class="filter-btn" data-filter="networking">Networking</button>
+                </div>
+
+                <div class="events-grid" id="eventsGrid">
+                    <div class="event-card" data-category="workshop">
+                        <div class="event-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">MAR</span>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-type">Workshop</span>
+                            <h3>Introduction to Machine Learning</h3>
+                            <p>Learn the fundamentals of machine learning algorithms and their applications. This hands-on workshop covers supervised and unsupervised learning techniques.</p>
+                            <div class="event-details">
+                                <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                                <p><strong>Location:</strong> Main Auditorium</p>
+                                <p><strong>Speaker:</strong> Dr. Ahmad Rahman</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="registerEvent('ml-workshop')">Register Now</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="seminar">
+                        <div class="event-date">
+                            <span class="date-day">22</span>
+                            <span class="date-month">MAR</span>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-type">Seminar</span>
+                            <h3>Financial Planning for Students</h3>
+                            <p>An informative seminar on personal finance management, budgeting, and investment basics tailored for university students.</p>
+                            <div class="event-details">
+                                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                                <p><strong>Location:</strong> Conference Hall B</p>
+                                <p><strong>Speaker:</strong> Ms. Lisa Tan, CFA</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="registerEvent('finance-seminar')">Register Now</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="workshop">
+                        <div class="event-date">
+                            <span class="date-day">28</span>
+                            <span class="date-month">MAR</span>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-type">Workshop</span>
+                            <h3>Advanced Python Programming</h3>
+                            <p>Deep dive into advanced Python concepts including decorators, generators, async programming, and design patterns.</p>
+                            <div class="event-details">
+                                <p><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+                                <p><strong>Location:</strong> Computer Lab 3</p>
+                                <p><strong>Speaker:</strong> Prof. David Lee</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="registerEvent('python-workshop')">Register Now</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="networking">
+                        <div class="event-date">
+                            <span class="date-day">05</span>
+                            <span class="date-month">APR</span>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-type">Networking</span>
+                            <h3>Industry Professionals Meet & Greet</h3>
+                            <p>Network with industry professionals from tech, finance, and consulting sectors. Great opportunity for career guidance and mentorship.</p>
+                            <div class="event-details">
+                                <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                                <p><strong>Location:</strong> Student Center</p>
+                                <p><strong>Guests:</strong> 20+ Industry Professionals</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="registerEvent('networking-event')">Register Now</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="seminar">
+                        <div class="event-date">
+                            <span class="date-day">12</span>
+                            <span class="date-month">APR</span>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-type">Seminar</span>
+                            <h3>Language Learning Strategies</h3>
+                            <p>Discover effective techniques for learning new languages, understanding linguistic structures, and improving communication skills.</p>
+                            <div class="event-details">
+                                <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+                                <p><strong>Location:</strong> Language Lab</p>
+                                <p><strong>Speaker:</strong> Dr. Maria Santos</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="registerEvent('language-seminar')">Register Now</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="workshop">
+                        <div class="event-date">
+                            <span class="date-day">19</span>
+                            <span class="date-month">APR</span>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-type">Workshop</span>
+                            <h3>Data Visualization with Tableau</h3>
+                            <p>Learn to create compelling data visualizations and dashboards using Tableau. No prior experience required.</p>
+                            <div class="event-details">
+                                <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                                <p><strong>Location:</strong> Computer Lab 2</p>
+                                <p><strong>Speaker:</strong> Mr. Kevin Lim</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="registerEvent('tableau-workshop')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="past-events">
+                    <h2>Past Events</h2>
+                    <div class="past-events-grid">
+                        <div class="past-event-card">
+                            <h3>Web Development Hackathon 2024</h3>
+                            <p>24-hour coding competition with 50+ participants</p>
+                            <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                        </div>
+                        <div class="past-event-card">
+                            <h3>Mathematics Olympiad</h3>
+                            <p>Annual mathematics competition with prizes worth RM 10,000</p>
+                            <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                        </div>
+                        <div class="past-event-card">
+                            <h3>Accounting Career Fair</h3>
+                            <p>Career fair with 30+ companies from finance sector</p>
+                            <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>APU Academic Excellence Society</h3>
+                    <p>Empowering students through academic excellence and collaborative learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Study Materials</a></li>
+                        <li><a href="forums.html">Forums</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@apuacademic.org</p>
+                    <p>Phone: +60 3-1234 5678</p>
+                    <p><a href="contact.html">Contact Form</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 APU Academic Excellence Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery of events and activities at APU Academic Excellence Society">
+    <title>Gallery - APU Academic Excellence Society</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>APU Academic Excellence Society</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="forums.html">Forums</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Gallery</h1>
+                <p>Memories from our events, workshops, and activities</p>
+            </div>
+        </section>
+
+        <section class="gallery-content">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all" onclick="filterGallery('all')">All</button>
+                    <button class="filter-btn" data-filter="events" onclick="filterGallery('events')">Events</button>
+                    <button class="filter-btn" data-filter="workshops" onclick="filterGallery('workshops')">Workshops</button>
+                    <button class="filter-btn" data-filter="programs" onclick="filterGallery('programs')">Programs</button>
+                    <button class="filter-btn" data-filter="networking" onclick="filterGallery('networking')">Networking</button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Web Development Hackathon 1">
+                            <div class="gallery-overlay">
+                                <h3>Web Development Hackathon</h3>
+                                <p>Participants collaborating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Web Development Hackathon 2">
+                            <div class="gallery-overlay">
+                                <h3>Web Development Hackathon</h3>
+                                <p>Team brainstorming</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Web Development Hackathon 3">
+                            <div class="gallery-overlay">
+                                <h3>Web Development Hackathon</h3>
+                                <p>Late-night coding session</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://www.stevens.edu/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fmviowpldu823%2Fe5877042a20d5d6db67c0a8af1cc7153%2F3d4926e26a08c68bb1c88e5acb7c2468%2Fmath_olympiad84.jpg%3Fw%3D1200%26f%3Dface%26q%3D80%26fit%3Dfill&w=2400&q=80" alt="Mathematics Olympiad 1">
+                            <div class="gallery-overlay">
+                                <h3>Mathematics Olympiad</h3>
+                                <p>Students solving problems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://media.tehrantimes.com/d/t/2020/09/28/3/3566263.jpg" alt="Mathematics Olympiad 2">
+                            <div class="gallery-overlay">
+                                <h3>Mathematics Olympiad</h3>
+                                <p>Award ceremony</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://www.uwa.edu.au/news/-/media/project/uwa/uwa/newsroom/card-image/2024/maths-olympiad-2024-card.jpg" alt="Mathematics Olympiad 3">
+                            <div class="gallery-overlay">
+                                <h3>Mathematics Olympiad</h3>
+                                <p>Group photo of winners</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://business.missouri.edu/sites/default/files/styles/news_details/public/2023-02/Kylie%20final.jpg?h=10d202d3&itok=I4V19PN7" alt="Accounting Career Fair 1">
+                            <div class="gallery-overlay">
+                                <h3>Accounting Career Fair</h3>
+                                <p>Networking with firms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://img.freepik.com/premium-photo/highangle-shot-companys-career-fair-booth-generative-ai_1169665-7868.jpg?w=996" alt="Accounting Career Fair 2">
+                            <div class="gallery-overlay">
+                                <h3>Accounting Career Fair</h3>
+                                <p>Company booths</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://www.ivybusiness.iastate.edu/files/2024/01/S23-Career-Night.jpg" alt="Accounting Career Fair 3">
+                            <div class="gallery-overlay">
+                                <h3>Accounting Career Fair</h3>
+                                <p>Student interviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://simplifyaitools.com/wp-content/uploads/2025/07/Upcoming-AI-Hackathon-2025-%E2%80%93-Simplify-AI-Tools-Hosts-Best-Hackathon-in-India-1-1024x572.jpg" alt="Hackathon 2024">
+                            <div class="gallery-overlay">
+                                <h3>Hackathon 2024</h3>
+                                <p>24-hour coding competition</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshops">
+                        <div class="gallery-image">
+                            <img src="https://img-c.udemycdn.com/course/750x422/5479158_99ce.jpg" alt="Python Workshop">
+                            <div class="gallery-overlay">
+                                <h3>Python Workshop</h3>
+                                <p>Data Science Fundamentals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="programs">
+                        <div class="gallery-image">
+                            <img src="https://www.designveloper.com/wp-content/uploads/2021/01/Web-Development-Bootcamp-1.jpg" alt="Web Development Program">
+                            <div class="gallery-overlay">
+                                <h3>Web Development Program</h3>
+                                <p>8-week bootcamp graduation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="networking">
+                        <div class="gallery-image">
+                            <img src="https://connect-assets.prosple.com/cdn/ff/TEdwZDPVuLCHNZRDGfSP1oJy8iIiUdmkiazwbr3ebSQ/1645762916/public/styles/scale_890_no_upsize/public/2022-02/feature-article-Sharp%20%26%20Carter1-1000x677-2022.png?itok=_ZTUsLlD" alt="Industry Meet & Greet">
+                            <div class="gallery-overlay">
+                                <h3>Industry Meet & Greet</h3>
+                                <p>Networking with professionals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtYVY9eYPRXAPvwuPP1X6YRAqVxXPtNJaZg&s" alt="Mathematics Olympiad">
+                            <div class="gallery-overlay">
+                                <h3>Mathematics Olympiad</h3>
+                                <p>Annual competition</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshops">
+                        <div class="gallery-image">
+                            <img src="https://skills4jobs.org/media/cache/standardImage/images/uploads/articleMainImages/4fc8df1e-7651-4d8b-a38c-70a6a999bdcf.jpg" alt="Accounting Seminar">
+                            <div class="gallery-overlay">
+                                <h3>Accounting Seminar</h3>
+                                <p>Financial Planning Workshop</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="programs">
+                        <div class="gallery-image">
+                            <img src="https://dataanalysismastery.com/wp-content/uploads/2024/06/STAY-CLOSE-TO-ANYTHING-THAT-MAKES-YOU-GLAD-YOU-ARE-ALIVE.-12-1-1024x576.png" alt="Statistics Program">
+                            <div class="gallery-overlay">
+                                <h3>Statistics Program</h3>
+                                <p>Data Analysis Workshop</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="networking">
+                        <div class="gallery-image">
+                            <img src="https://blog.pathwayu.com/hubfs/Handshake.png" alt="Career Fair">
+                            <div class="gallery-overlay">
+                                <h3>Career Fair</h3>
+                                <p>Connecting students with employers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://api.wakephone.com/Upload/Article/20240125/245636d5239d4983b2e2beff4d73eecb.jpg" alt="Annual Gala">
+                            <div class="gallery-overlay">
+                                <h3>Annual Gala</h3>
+                                <p>Celebrating achievements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>APU Academic Excellence Society</h3>
+                    <p>Empowering students through academic excellence and collaborative learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Study Materials</a></li>
+                        <li><a href="forums.html">Forums</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@apuacademic.org</p>
+                    <p>Phone: +60 3-1234 5678</p>
+                    <p><a href="contact.html">Contact Form</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 APU Academic Excellence Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+

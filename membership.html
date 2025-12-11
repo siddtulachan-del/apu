@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join APU Academic Excellence Society and become a member">
+    <title>Membership - APU Academic Excellence Society</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>APU Academic Excellence Society</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="forums.html">Forums</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Become a Member</h1>
+                <p>Join our community and unlock exclusive benefits</p>
+            </div>
+        </section>
+
+        <section class="membership-content">
+            <div class="container">
+                <div class="membership-benefits">
+                    <h2>Member Benefits</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🎓</div>
+                            <h3>Access to All Programs</h3>
+                            <p>Participate in all our academic programs and workshops at discounted rates or for free.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🎫</div>
+                            <h3>Priority Event Registration</h3>
+                            <p>Get early access to register for popular events, workshops, and seminars.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">📚</div>
+                            <h3>Exclusive Resources</h3>
+                            <p>Access to premium study materials, e-books, and video tutorials.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">💬</div>
+                            <h3>Forum Access</h3>
+                            <p>Participate in exclusive member-only forums and discussions.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🤝</div>
+                            <h3>Networking Opportunities</h3>
+                            <p>Connect with industry professionals and fellow students at exclusive networking events.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🏆</div>
+                            <h3>Certificates & Recognition</h3>
+                            <p>Receive certificates for completed programs and recognition for achievements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membership-types">
+                    <h2>Membership Types</h2>
+                    <div class="membership-cards">
+                        <div class="membership-card">
+                            <h3>Student Member</h3>
+                            <div class="membership-price">Free</div>
+                            <ul class="membership-features">
+                                <li>✓ Access to basic programs</li>
+                                <li>✓ Forum participation</li>
+                                <li>✓ Event attendance</li>
+                                <li>✓ Basic resources</li>
+                                <li>✗ Premium content</li>
+                                <li>✗ Priority registration</li>
+                            </ul>
+                            <button class="btn btn-outline" onclick="selectMembership('student')">Select Plan</button>
+                        </div>
+                        <div class="membership-card featured">
+                            <div class="featured-badge">Most Popular</div>
+                            <h3>Premium Member</h3>
+                            <div class="membership-price">RM 50/year</div>
+                            <ul class="membership-features">
+                                <li>✓ Access to all programs</li>
+                                <li>✓ Forum participation</li>
+                                <li>✓ Priority event registration</li>
+                                <li>✓ Premium resources</li>
+                                <li>✓ Exclusive content</li>
+                                <li>✓ Networking events</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="selectMembership('premium')">Select Plan</button>
+                        </div>
+                        <div class="membership-card">
+                            <h3>Lifetime Member</h3>
+                            <div class="membership-price">RM 200</div>
+                            <ul class="membership-features">
+                                <li>✓ Lifetime access to all programs</li>
+                                <li>✓ All premium benefits</li>
+                                <li>✓ VIP event access</li>
+                                <li>✓ Mentorship opportunities</li>
+                                <li>✓ Leadership roles</li>
+                                <li>✓ Alumni network</li>
+                            </ul>
+                            <button class="btn btn-outline" onclick="selectMembership('lifetime')">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="membership-form-section">
+                    <h2>Join Now</h2>
+                    <form id="membershipForm" class="membership-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="memberFirstName">First Name:</label>
+                                <input type="text" id="memberFirstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="memberLastName">Last Name:</label>
+                                <input type="text" id="memberLastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="memberEmail">Email:</label>
+                                <input type="email" id="memberEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="memberPhone">Phone:</label>
+                                <input type="tel" id="memberPhone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="memberStudentId">Student ID:</label>
+                            <input type="text" id="memberStudentId" name="studentId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="memberProgram">Program of Study:</label>
+                            <select id="memberProgram" name="program" required>
+                                <option value="">Select program...</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="mathematics">Mathematics</option>
+                                <option value="accounting">Accounting</option>
+                                <option value="linguistics">Linguistics</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="memberType">Membership Type:</label>
+                            <select id="memberType" name="membershipType" required>
+                                <option value="">Select membership...</option>
+                                <option value="student">Student Member (Free)</option>
+                                <option value="premium">Premium Member (RM 50/year)</option>
+                                <option value="lifetime">Lifetime Member (RM 200)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="memberInterests">Areas of Interest:</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="interests" value="programming"> Programming</label>
+                                <label><input type="checkbox" name="interests" value="mathematics"> Mathematics</label>
+                                <label><input type="checkbox" name="interests" value="accounting"> Accounting</label>
+                                <label><input type="checkbox" name="interests" value="linguistics"> Linguistics</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="memberMessage">Why do you want to join? (Optional):</label>
+                            <textarea id="memberMessage" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                    <p id="membershipMessage" class="form-message"></p>
+                </section>
+
+                <section class="testimonials">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p>"Joining this society has been one of the best decisions I made in university. The programs and resources have significantly helped me improve my programming skills."</p>
+                            <div class="testimonial-author">
+                                <strong>Alex Tan</strong>
+                                <span>Computer Science Student</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p>"The networking events are amazing! I've met so many industry professionals and got valuable career advice. Highly recommend!"</p>
+                            <div class="testimonial-author">
+                                <strong>Sarah Lim</strong>
+                                <span>Accounting Student</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p>"The forums are incredibly helpful. Whenever I have questions, there's always someone ready to help. Great community!"</p>
+                            <div class="testimonial-author">
+                                <strong>Michael Chen</strong>
+                                <span>Mathematics Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>APU Academic Excellence Society</h3>
+                    <p>Empowering students through academic excellence and collaborative learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Study Materials</a></li>
+                        <li><a href="forums.html">Forums</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@apuacademic.org</p>
+                    <p>Phone: +60 3-1234 5678</p>
+                    <p><a href="contact.html">Contact Form</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 APU Academic Excellence Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+

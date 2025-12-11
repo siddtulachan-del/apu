@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join academic discussion forums and engage with peers">
+    <title>Forums - APU Academic Excellence Society</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>APU Academic Excellence Society</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="forums.html" class="active">Forums</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Discussion Forums</h1>
+                <p>Engage in academic discussions and share knowledge with peers</p>
+            </div>
+        </section>
+
+        <section class="forums-content">
+            <div class="container">
+                <div class="forum-search">
+                    <input type="text" id="forumSearch" placeholder="Search forums..." onkeyup="filterForums()">
+                </div>
+
+                <div class="forums-list">
+                    <div class="forum-category">
+                        <h2>Programming Forums</h2>
+                        <div class="forum-topics">
+                            <div class="forum-topic">
+                                <div class="topic-icon">💻</div>
+                                <div class="topic-content">
+                                    <h3><a href="#web-dev">Web Development</a></h3>
+                                    <p>Discuss HTML, CSS, JavaScript, frameworks, and web technologies</p>
+                                    <div class="topic-stats">
+                                        <span>245 Topics</span>
+                                        <span>1,234 Posts</span>
+                                        <span>Last post: 2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forum-topic">
+                                <div class="topic-icon">🐍</div>
+                                <div class="topic-content">
+                                    <h3><a href="#python">Python Programming</a></h3>
+                                    <p>Python syntax, libraries, data science, and automation</p>
+                                    <div class="topic-stats">
+                                        <span>189 Topics</span>
+                                        <span>892 Posts</span>
+                                        <span>Last post: 5 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forum-topic">
+                                <div class="topic-icon">☕</div>
+                                <div class="topic-content">
+                                    <h3><a href="#java">Java Development</a></h3>
+                                    <p>Java programming, OOP concepts, Spring framework</p>
+                                    <div class="topic-stats">
+                                        <span>156 Topics</span>
+                                        <span>678 Posts</span>
+                                        <span>Last post: 1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forum-category">
+                        <h2>Mathematics Forums</h2>
+                        <div class="forum-topics">
+                            <div class="forum-topic">
+                                <div class="topic-icon">📊</div>
+                                <div class="topic-content">
+                                    <h3><a href="#statistics">Statistics & Probability</a></h3>
+                                    <p>Statistical analysis, probability theory, and data interpretation</p>
+                                    <div class="topic-stats">
+                                        <span>134 Topics</span>
+                                        <span>567 Posts</span>
+                                        <span>Last post: 3 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forum-topic">
+                                <div class="topic-icon">🔢</div>
+                                <div class="topic-content">
+                                    <h3><a href="#algebra">Linear Algebra</a></h3>
+                                    <p>Vectors, matrices, eigenvalues, and linear transformations</p>
+                                    <div class="topic-stats">
+                                        <span>98 Topics</span>
+                                        <span>423 Posts</span>
+                                        <span>Last post: 6 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forum-topic">
+                                <div class="topic-icon">📈</div>
+                                <div class="topic-content">
+                                    <h3><a href="#calculus">Calculus</a></h3>
+                                    <p>Differential and integral calculus, limits, and derivatives</p>
+                                    <div class="topic-stats">
+                                        <span>112 Topics</span>
+                                        <span>489 Posts</span>
+                                        <span>Last post: 1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forum-category">
+                        <h2>Accounting Forums</h2>
+                        <div class="forum-topics">
+                            <div class="forum-topic">
+                                <div class="topic-icon">📋</div>
+                                <div class="topic-content">
+                                    <h3><a href="#financial">Financial Accounting</a></h3>
+                                    <p>Financial statements, journal entries, and accounting principles</p>
+                                    <div class="topic-stats">
+                                        <span>167 Topics</span>
+                                        <span>745 Posts</span>
+                                        <span>Last post: 4 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forum-topic">
+                                <div class="topic-icon">💰</div>
+                                <div class="topic-content">
+                                    <h3><a href="#managerial">Managerial Accounting</a></h3>
+                                    <p>Cost accounting, budgeting, and financial decision-making</p>
+                                    <div class="topic-stats">
+                                        <span>123 Topics</span>
+                                        <span>556 Posts</span>
+                                        <span>Last post: 8 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forum-category">
+                        <h2>Linguistics Forums</h2>
+                        <div class="forum-topics">
+                            <div class="forum-topic">
+                                <div class="topic-icon">🌐</div>
+                                <div class="topic-content">
+                                    <h3><a href="#general-ling">General Linguistics</a></h3>
+                                    <p>Phonetics, syntax, semantics, and language structure</p>
+                                    <div class="topic-stats">
+                                        <span>89 Topics</span>
+                                        <span>345 Posts</span>
+                                        <span>Last post: 2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forum-topic">
+                                <div class="topic-icon">🗣️</div>
+                                <div class="topic-content">
+                                    <h3><a href="#socioling">Sociolinguistics</a></h3>
+                                    <p>Language and society, dialects, and language variation</p>
+                                    <div class="topic-stats">
+                                        <span>67 Topics</span>
+                                        <span>278 Posts</span>
+                                        <span>Last post: 3 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="new-topic-section">
+                    <h2>Start a New Discussion</h2>
+                    <form id="newTopicForm" class="topic-form">
+                        <div class="form-group">
+                            <label for="topicTitle">Topic Title:</label>
+                            <input type="text" id="topicTitle" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="topicCategory">Category:</label>
+                            <select id="topicCategory" name="category" required>
+                                <option value="">Select category...</option>
+                                <option value="programming">Programming</option>
+                                <option value="mathematics">Mathematics</option>
+                                <option value="accounting">Accounting</option>
+                                <option value="linguistics">Linguistics</option>
+                                <option value="general">General Discussion</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="topicContent">Content:</label>
+                            <textarea id="topicContent" name="content" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post Topic</button>
+                    </form>
+                    <p id="topicMessage" class="form-message"></p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>APU Academic Excellence Society</h3>
+                    <p>Empowering students through academic excellence and collaborative learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Study Materials</a></li>
+                        <li><a href="forums.html">Forums</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@apuacademic.org</p>
+                    <p>Phone: +60 3-1234 5678</p>
+                    <p><a href="contact.html">Contact Form</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 APU Academic Excellence Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
